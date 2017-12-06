@@ -1,0 +1,23 @@
+<arquillian xmlns="http://jboss.org/schema/arquillian"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="
+        http://jboss.org/schema/arquillian
+        http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+
+    <container qualifier="containerless" default="true"/>
+
+    <extension qualifier="docker">
+        <property name="serverUri">http://apaapses3.apa.at:2375</property>
+        <property name="serverVersion">1.12</property>
+        <property name="definitionFormat">CUBE</property>
+        <property name="dockerContainers">
+            printservice-cube:
+              image: tutum/tomcat:7.0
+              await:
+                strategy: polling
+        </property>
+
+    </extension>
+
+</arquillian>
