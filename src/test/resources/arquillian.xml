@@ -8,7 +8,7 @@
     <container qualifier="containerless" default="true"/>
 
     <extension qualifier="docker">
-        <property name="serverUri">http://apaapses3.apa.at:2375</property>
+        <property name="serverUri">${docker.host}</property>
         <property name="serverVersion">1.12</property>
         <property name="definitionFormat">CUBE</property>
         <property name="dockerContainers">
