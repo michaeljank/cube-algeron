@@ -27,26 +27,6 @@
 
     <packaging>war</packaging>
 
-    <distributionManagement>
-        <repository>
-            <id>release-nexus-apa-at</id>
-            <name>APA-IT Releases Repository</name>
-            <url>http://nexus.apa.at/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshot-nexus-apa-at</id>
-            <name>APA-IT Snapshot Repository</name>
-            <url>http://nexus.apa.at/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>nexus-apa</id>
-            <url>http://nexus.apa.at/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
-
     <build>
         <finalName>${project.artifactId}</finalName>
 
